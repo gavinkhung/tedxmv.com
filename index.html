@@ -23,7 +23,7 @@
             <h1 class="ui inverted header">
                 TEDx Monta Vista
             </h1>
-            <h2>Ideas worth sharing.</h2>
+            <h2 id="typed">Ideas worth sharing.</h2>
         </div>
     </div>
 
@@ -117,6 +117,7 @@
             </div>
         </div>
     </div>
+    <div class="ui divider"></div>
 
     <div id="role" class="ui centered huge header">What We Do</div>
     <div class="ui vertical stripe">
@@ -136,5 +137,17 @@
               <p>21840 McClellan Rd, Cupertino, CA 95014</p>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          strings: ["Ideas worth sharing.", "Monta Vista High School", "Based in Cupertino"],
+          backSpeed: 80,
+          typeSpeed: 40,
+          backDelay: 2000,
+          showCursor: false,
+          loop: true
+        });
+    </script>
 </body>
 </html>
