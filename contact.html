@@ -6,7 +6,7 @@
     <title>About Us</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -20,6 +20,27 @@
                 <a href="conferences.html" class="item">Conferences</a>
                 <a href="contact.html" class="active item">Contact</a>
             </div>
+        </div>
+    </div>
+
+    <div id="event" class="ui centered huge header">Contact Us</div>
+    <div class="ui vertical stripe">
+        <div class="ui container">
+            <form class="ui form" action="https://formspree.io/FORM_ID" method="POST">
+                <label class="field">
+                    Your Name:
+                    <input class="ui input" type="text" name="name" placeholder="name" required>
+                </label>
+                <label class="field">
+                    Your Email:
+                    <input class="ui input" type="email" name="_replyto" placeholder="email" required>
+                </label>
+                <label class="field">
+                    Message:
+                    <textarea class="ui input" name="message" placeholder="message" required></textarea>
+                </label>
+                <input class="ui button" type="submit" value="Send">
+            </form>
         </div>
     </div>
 
