@@ -6,7 +6,9 @@
     <title>Conferences</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -20,40 +22,173 @@
                 <a href="contact.html" class="item">Contact</a>
             </div>
         </div>
-    </div>
-
-    <div id="role" class="ui centered huge header">Conferences</div>
-
-    <div class="ui vertical stripe">
-        <div class="ui container">
-            <div class="ui pointing menu">
-                <a class="active item">
-                  2019
-                </a>
-                <a class="item">
-                  2016
-                </a>
-                <a class="item">
-                  2015
-                </a>
-                <div class="right menu">
-                  <div class="item">
-                    <div class="ui transparent icon input">
-                      <input type="text" placeholder="Search...">
-                      <i class="search link icon"></i>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                Conferences
+            </h1>
         </div>
     </div>
+
+    <div id="event" class="ui centered huge header">Past</div>
+    <div class="ui container">
+
+      <div class="ui tabular menu">
+        <a class="item active" data-tab="2019">2019</a>
+        <a class="item" data-tab="2016">2016</a>
+        <a class="item" data-tab="2015">2015</a>
+      </div>
+      <div class="ui bottom attached tab segment active" data-tab="2019">
+        <div id="event" class="ui centered huge header">2019 Spring Conference - Redefining Reality</div>
+        <div class="ui vertical stripe">
+            <div class="ui text container">
+                <p>Our theme for the 2019 spring conference was Redefining Reality. Our curated talks surrounded the common theme of breaking down traditional barriers in ways of thinking and pushing the boundaries of what is possible. Our conference took place on April 12, 2019 from 5 PM to 8 PM at the Monta Vista High School auditorium.</p>
+            </div>
+            <div class="ui divider"></div>
+            <div id="role" class="ui centered huge header">Speakers</div>
+            <div class="ui centered link cards">
+              <div class="ui card">
+                  <div class="image">
+                      <img src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 1</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 2</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 3</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="2016">
+        <div id="event" class="ui centered huge header">2016 Spring Conference - Breaking Barriers</div>
+        <div class="ui vertical stripe">
+            <div class="ui text container">
+                <p>Our theme for the 2016 spring conference was Breaking Barriers. Our curated talks surrounded the common theme of breaking down traditional barriers in ways of thinking and pushing the boundaries of what is possible. Our conference took place on April 23, 2016 from 5 PM to 8 PM at the Monta Vista High School auditorium.</p>
+            </div>
+            <div class="ui divider"></div>
+            <div id="role" class="ui centered huge header">Speakers</div>
+            <div class="ui centered link cards">
+              <div class="ui card">
+                  <div class="image">
+                      <img src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 1</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 2</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 3</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="2015">
+        <div id="event" class="ui centered huge header">2015 Spring Conference - Initiating Innovation</div>
+        <div class="ui vertical stripe">
+            <div class="ui text container">
+                <p>Our theme for the 2015 spring conference was Initiating Innovation. This theme was centered around the spirit of new ideas, including humanities, science, or the arts. Our conference took place on April 24, 2015 from 5 PM to 8 PM at the Monta Vista High School auditorium.</p>
+            </div>
+            <div class="ui divider"></div>
+            <div id="role" class="ui centered huge header">Speakers</div>
+            <div class="ui centered link cards">
+              <div class="ui card">
+                  <div class="image">
+                      <img src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 1</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 2</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+              <div class="ui card">
+                  <div class="image">
+                      <img class="ui medium rounded image" src="img/no_profile.svg">
+                  </div>
+                  <div class="content">
+                      <a class="header">Speaker 3</a>
+                      <div class="description">
+                        Info
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
 
 
     <div class="ui inverted vertical footer segment">
         <div class="ui container">
               <h4 class="ui inverted header">Monta Vista Tedx</h4>
               <p>21840 McClellan Rd, Cupertino, CA 95014</p>
+              <button class="ui facebook button">
+                <i class="facebook icon"></i>
+                <a href="https://www.facebook.com/TEDxMontaVista">Facebook</a>
+              </button>
         </div>
     </div>
+
+    <script>
+      $('.menu .item').tab();
+    </script>
 </body>
 </html>
