@@ -37,6 +37,8 @@
         <a class="item" data-tab="2016">2016</a>
         <a class="item" data-tab="2015">2015</a>
       </div>
+
+
       <div class="ui bottom attached tab segment active" data-tab="2019">
         <div id="event" class="ui centered huge header">2019 Spring Conference - Redefining Reality</div>
         <div class="ui vertical stripe">
@@ -46,42 +48,95 @@
             <div class="ui divider"></div>
             <div id="role" class="ui centered huge header">Speakers</div>
             <div class="ui centered link cards">
-              <div class="ui card">
-                  <div class="image">
-                      <img src="img/no_profile.svg">
-                  </div>
-                  <div class="content">
+                <div class="ui card">
+                    <div class="image">
+                        <img id="speaker1_2019" class="ui medium rounded image" src="img/no_profile.svg">
+                    </div>
+                    <div class="content">
                       <a class="header">Speaker 1</a>
                       <div class="description">
-                        Info
+                            Info
                       </div>
-                  </div>
-              </div>
-              <div class="ui card">
-                  <div class="image">
-                      <img class="ui medium rounded image" src="img/no_profile.svg">
-                  </div>
-                  <div class="content">
-                      <a class="header">Speaker 2</a>
-                      <div class="description">
-                        Info
-                      </div>
-                  </div>
-              </div>
-              <div class="ui card">
-                  <div class="image">
-                      <img class="ui medium rounded image" src="img/no_profile.svg">
-                  </div>
-                  <div class="content">
-                      <a class="header">Speaker 3</a>
-                      <div class="description">
-                        Info
-                      </div>
-                  </div>
-              </div>
+                    </div>
+                    <div id="speaker1_card_2019" class="ui modal">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Speaker 1
+                        </div>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                <img class="ui medium rounded image" src="img/no_profile.svg">
+                            </div>
+                            <div class="description">
+                            <div class="ui header">
+                                Occupation
+                            </div>
+                                <p>Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui card">
+                    <div class="image">
+                        <img id="speaker2_2019" class="ui medium rounded image" src="img/no_profile.svg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Speaker 2</a>
+                        <div class="description">
+                            Info
+                        </div>
+                    </div>
+                    <div id="speaker2_card_2019" class="ui modal">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Speaker 2
+                        </div>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                <img class="ui medium rounded image" src="img/no_profile.svg">
+                            </div>
+                            <div class="description">
+                            <div class="ui header">
+                                Occupation
+                            </div>
+                                <p>Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui card">
+                    <div class="image">
+                        <img id="speaker3_2019" class="ui medium rounded image" src="img/no_profile.svg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Speaker 3</a>
+                        <div class="description">
+                            Info
+                        </div>
+                    </div>
+                    <div id="speaker3_card_2019" class="ui modal">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Speaker 3
+                        </div>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                <img class="ui medium rounded image" src="img/no_profile.svg">
+                            </div>
+                            <div class="description">
+                            <div class="ui header">
+                                Occupation
+                            </div>
+                                <p>Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
         </div>
       </div>
+
+
       <div class="ui bottom attached tab segment" data-tab="2016">
         <div id="event" class="ui centered huge header">2016 Spring Conference - Breaking Barriers</div>
         <div class="ui vertical stripe">
@@ -91,14 +146,14 @@
             <div class="ui divider"></div>
             <div id="role" class="ui centered huge header">Speakers</div>
             <div class="ui centered link cards">
-              <div class="ui card">
+              <div id="speaker1_card_2019" class="ui card">
                   <div class="image">
                       <img src="img/no_profile.svg">
                   </div>
                   <div class="content">
                       <a class="header">Speaker 1</a>
                       <div class="description">
-                        Info
+                          Info
                       </div>
                   </div>
               </div>
@@ -127,6 +182,8 @@
             </div>
         </div>
       </div>
+
+
       <div class="ui bottom attached tab segment" data-tab="2015">
         <div id="event" class="ui centered huge header">2015 Spring Conference - Initiating Innovation</div>
         <div class="ui vertical stripe">
@@ -189,6 +246,16 @@
 
     <script>
       $('.menu .item').tab();
+      
+      $("#speaker1_2019").click(function(){
+          $('#speaker1_card_2019.ui.modal').modal('show');
+      });
+      $("#speaker2_2019").click(function(){
+          $('#speaker2_card_2019.ui.modal').modal('show');
+      });
+      $("#speaker3_2019").click(function(){
+          $('#speaker3_card_2019.ui.modal').modal('show');
+      });
     </script>
 </body>
 </html>
