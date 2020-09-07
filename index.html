@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+    <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
 <body>
-    <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui inverted segment">
         <div class="ui container">
-            <div class="ui large secondary inverted pointing menu image">
-                <img class="image" src="img/tedx-logo.png">
-                <a href="index.html" class="active item">Home</a>
-                <a href="about.html" class="item">About Us</a>
-                <a href="conferences.html" class="item">Conferences</a>
-                <a href="contact.html" class="item">Contact</a>
-            </div>
+            <!-- navbar -->
+            <nav id="navbar" class="ui inverted secondary pointing menu">
+                <div class="item">
+                    <a href="index.html">
+                        <img class="image large monitor only" src="public/assets/imgs/tedx-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="right stackable menu">
+                    <a href="index.html" class="active item">Home</a>
+                    <a href="about.html" class="item">About Us</a>
+                    <a href="conferences.html" class="item">Conferences</a>
+                    <a href="contact.html" class="item">Contact</a>
+                </div>
+            </nav>
         </div>
+    </div>
+    <div class="ui inverted vertical masthead center aligned segment">
         <div class="ui text container">
             <h1 class="ui inverted header">
                 TEDx Monta Vista
@@ -140,7 +150,11 @@
               <p>21840 McClellan Rd, Cupertino, CA 95014</p>
               <button class="ui facebook button">
                   <i class="facebook icon"></i>
-                  <a href="https://www.facebook.com/TEDxMontaVista">Facebook</a>
+                  <a href="https://www.facebook.com/TEDxMontaVista" target=”_blank”>Facebook</a>
+              </button>
+              <button class="ui instagram button">
+                  <i class="instagram icon"></i>
+                  <a href="https://www.instagram.com/tedxmontavista/" target=”_blank”>Instagram</a>
               </button>
         </div>
     </div>
@@ -156,5 +170,6 @@
           loop: true
         });
     </script>
+    <script src="public/js/index.js"></script>
 </body>
 </html>

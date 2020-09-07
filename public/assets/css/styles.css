@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.10em;
+}
+.mobile.only {
+    display: none;
+}
+img {
+    background-size: cover;
+}
+.footer a {
+    color: black;
+}
+
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large monitor only"]:not(.mobile),
+    [class*="widescreen monitor only"]:not(.mobile),
+    [class*="or lower hidden"]{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .mobile.only {
+        display: block;
+    }
+}
