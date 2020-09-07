@@ -16,16 +16,44 @@
         <div class="ui container">
             <!-- navbar -->
             <nav id="navbar" class="ui inverted secondary pointing menu">
-                <div class="item">
+                <div class="item computer only">
                     <a href="index.html">
-                        <img class="image large monitor only" src="public/assets/imgs/tedx-logo.png" alt="">
+                        <img class="image" src="public/assets/imgs/tedx-logo.png" alt="">
                     </a>
                 </div>
-                <div class="right stackable menu">
-                    <a href="index.html" class="active item">Home</a>
-                    <a href="about.html" class="item">About Us</a>
-                    <a href="conferences.html" class="item">Conferences</a>
-                    <a href="contact.html" class="item">Contact</a>
+                <div class="computer only">
+                    <div class="right stackable four item menu">
+                        <a href="index.html" class="active item">Home</a>
+                        <a href="about.html" class="item">About Us</a>
+                        <a href="conferences.html" class="item">Conferences</a>
+                        <a href="contact.html" class="item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile only full">
+                    <div id="hamburger" class="ui grid">
+                        <div class="left floated left aligned eight wide column">
+                            <a href="index.html">
+                                <img class="image" src="public/assets/imgs/tedx-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right floated right aligned eight wide column">
+                            <i id="hamburger-icon" class="bars icon"></i>
+                        </div>
+                    </div>
+                    <div id="hamburger-menu" class="ui two column grid">
+                        <div class="left floated left aligned column">
+                            <a href="index.html" class="item">Home</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="about.html" class="item">About Us</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="conferences.html" class="item">Conferences</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="contact.html" class="item">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -160,6 +188,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="public/js/index.js"></script>
     <script>
         var typed = new Typed('#typed', {
           strings: ["Ideas worth sharing.", "Monta Vista High School", "Based in Cupertino"],
@@ -170,6 +199,5 @@
           loop: true
         });
     </script>
-    <script src="public/js/index.js"></script>
 </body>
 </html>

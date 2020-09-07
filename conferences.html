@@ -8,24 +8,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+    <link rel="stylesheet" href="public/assets/css/index.css">
 </head>
 <body>
 
-    <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui inverted segment">
         <div class="ui container">
-            <div class="ui large secondary inverted pointing menu image">
-                <img class="image" src="img/tedx-logo.png">
-                <a href="index.html" class="item">Home</a>
-                <a href="about.html" class="item">About Us</a>
-                <a href="conferences.html" class="active item">Conferences</a>
-                <a href="contact.html" class="item">Contact</a>
-            </div>
-        </div>
-        <div class="ui text container">
-            <h1 class="ui inverted header">
-                Conferences
-            </h1>
+            <!-- navbar -->
+            <nav id="navbar" class="ui inverted secondary pointing menu">
+                <div class="item computer only">
+                    <a href="index.html">
+                        <img class="image" src="public/assets/imgs/tedx-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="computer only">
+                    <div class="right stackable four item menu">
+                        <a href="index.html" class="active item">Home</a>
+                        <a href="about.html" class="item">About Us</a>
+                        <a href="conferences.html" class="item">Conferences</a>
+                        <a href="contact.html" class="item">Contact</a>
+                    </div>
+                </div>
+                <div class="mobile only full">
+                    <div id="hamburger" class="ui grid">
+                        <div class="left floated left aligned eight wide column">
+                            <a href="index.html">
+                                <img class="image" src="public/assets/imgs/tedx-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right floated right aligned eight wide column">
+                            <i id="hamburger-icon" class="bars icon"></i>
+                        </div>
+                    </div>
+                    <div id="hamburger-menu" class="ui two column grid">
+                        <div class="left floated left aligned column">
+                            <a href="index.html" class="item">Home</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="about.html" class="item">About Us</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="conferences.html" class="item">Conferences</a>
+                        </div>
+                        <div class="left floated left aligned column">
+                            <a href="contact.html" class="item">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
 
@@ -342,12 +373,17 @@
               <h4 class="ui inverted header">Monta Vista Tedx</h4>
               <p>21840 McClellan Rd, Cupertino, CA 95014</p>
               <button class="ui facebook button">
-                <i class="facebook icon"></i>
-                <a href="https://www.facebook.com/TEDxMontaVista">Facebook</a>
+                  <i class="facebook icon"></i>
+                  <a href="https://www.facebook.com/TEDxMontaVista" target=”_blank”>Facebook</a>
+              </button>
+              <button class="ui instagram button">
+                  <i class="instagram icon"></i>
+                  <a href="https://www.instagram.com/tedxmontavista/" target=”_blank”>Instagram</a>
               </button>
         </div>
     </div>
 
+    <script src="public/js/index.js"></script>
     <script>
         $(document).ready(function(){
             $('.tabular.menu .item').tab({history:false});
