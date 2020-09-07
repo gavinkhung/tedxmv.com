@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1.10em;
+    font-size: 1.15em;
 }
 .mobile.only {
     display: none;
@@ -9,11 +9,18 @@
 #hamburger-menu {
     display: none;
 }
+img {
+    background-size: cover;
+}
 .full {
     width: 100%;
 }
-img {
-    background-size: cover;
+.page {
+    margin: 2.5%;
+    height: 80vh;
+}
+.ui.divider {
+    margin: 2.5%;
 }
 .footer a {
     color: black;
