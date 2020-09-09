@@ -17,10 +17,13 @@ img {
 }
 .page {
     margin: 2.5%;
-    height: 80vh;
+    min-height: 80vh;
 }
 .ui.divider {
     margin: 2.5%;
+}
+.still {
+    height: 30px;
 }
 .footer a {
     color: black;
