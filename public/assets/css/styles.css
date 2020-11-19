@@ -16,7 +16,8 @@ img {
     width: 100%;
 }
 .page {
-    margin: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     min-height: 80vh;
 }
 .ui.divider {
